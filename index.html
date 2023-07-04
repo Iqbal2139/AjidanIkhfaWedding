@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aji & Ikhfa Wedding Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#container-0").click(function(){
+            $(this).hide();
+            $("#container-1").fadeIn(3000);
+          });
+          $("#container-1").click(function(){
+            $(this).hide();
+            $("#container-2").fadeIn(3000);
+            setTimeout(() => {
+                $(".pi-2").fadeIn(3000);
+                $(".text-3").fadeIn(3000);
+            }, 1000);
+          });
+          $("#container-2").click(function(){
+            $(this).hide();
+            $("#container-3").fadeIn(3000);
+            setTimeout(() => {
+                $(".pi-3").fadeIn(3000);
+                $(".text-4").fadeIn(3000);
+            }, 1000);
+          });
+          $("#container-3").click(function(){
+            $(this).hide();
+            $("#container-4").fadeIn(3000);
+            setTimeout(() => {
+                $(".text-1").fadeIn(3000);
+                $(".text-2").fadeIn(3000);
+            }, 1000);
+          });
+        });
+        </script>
+</head>
+<body>
+    <style>
+        @font-face {
+	    font-family: 'Helvetica';
+	    src: url(/fonts/Helvetica/Helvetica.ttf);
+        }
+        @font-face {
+	    font-family: 'Bacasime';
+	    src: url(/fonts/Bacasime_Antique/BacasimeAntique-Regular.ttf);
+        }
+        @font-face {
+	    font-family: 'Precious';
+	    src: url(/fonts/precious/Precious.ttf);
+        }
+        @font-face {
+	    font-family: 'Agdasima';
+	    src: url(/fonts/Agdasima/Agdasima.ttf);
+        }
+        @font-face {
+	    font-family: 'DancingScript';
+	    src: url(/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container-fluid{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(77, 73, 70) !important;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background: url('images/bg-1.png') center no-repeat;
+        }
+        .bride{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            padding-top: 9vh;
+        }
+        .bride-a{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            padding-top: 9vh;
+            right: 30vh;
+        }
+        .bride-b{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            padding-top: 9vh;
+            left: 18vh;
+        }
+        .text-1{
+            position: relative;
+            color: rgb(232, 211, 92);
+            text-shadow: 0px 2px #ffffff;
+            z-index: 1;
+            font-family: 'Agdasima';
+        }
+        .text-2{
+            position: relative;
+            color: rgb(232, 211, 92);
+            text-shadow: 0px 2px #ffffff;
+            z-index: 1;
+            font-family: 'DancingScript';
+        }
+        .text-3 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 93vh;
+            bottom: 60vh;
+            font-weight: bold;
+            display: none;
+        }
+        .text-4 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 75vh;
+            bottom: 60vh;
+            font-weight: bold;
+            display: none;
+        }
+        .fw-1{
+            position: absolute;
+            z-index: 0;
+            right: 60vh;
+            top: 0vh;
+        }
+        .fw-2{
+            position: absolute;
+            z-index: 0;
+            width: 32%;
+            right: 69vh;
+            bottom: 17vh;
+        }
+        .pi{
+            position: absolute;
+            z-index: 1;
+            right: 80vh;
+            color: #ffffff;
+            bottom: 23vh;
+            font-family: 'Precious';
+            font-size: 5vh;
+            background: rgba(180, 137, 29, 0.959);
+            padding: 2vh 8vh 1vh 8vh;
+            border-radius: 5vh;
+        }
+        .pi-2 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 93vh;
+            bottom: 52vh;
+            font-weight: bold;
+            display: none;
+            text-align: left;
+            padding-right: 70vh;
+        }
+        .pi-3 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 75vh;
+            bottom: 52vh;
+            font-weight: bold;
+            display: none;
+            text-align: left;
+            padding-right: 98vh;
+        }
+        #container-0{
+            background: url('images/bg.png') center no-repeat;
+            background-size: cover;
+        }
+        #container-1{
+            display: none;
+            background: url('images/bg.png') center no-repeat;
+            background-size: cover;
+        }
+        #container-2{
+            display: none;
+            background: url('images/bg-1.png') center no-repeat;
+            background-size: cover;
+        }
+        #container-3{
+            display: none;
+            background: url('images/bg-1.png') center no-repeat;
+            background-size: cover;
+        }
+        #container-4{
+            display: none;
+            background: url('images/bg-1.png') center no-repeat;
+            background-size: cover;
+        }
+        .zoom-in {
+            animation: zoom-in 2s ease-in;
+        }
+        @keyframes zoom-in {
+         0% {
+            transform: scale(0.5, 0.5);
+            opacity: 0;
+            }
+         100% {
+            transform: scale(1, 1);
+            opacity: 1;
+         }
+        }
+        @media (max-width: 400px) {
+            .container-fluid{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(77, 73, 70) !important;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            }
+            .fw-1{
+                position: absolute;
+                z-index: 0;
+                right: 0vh;
+                top: 20vh;
+                width: 100%;
+            }
+            .fw-2{
+                position: absolute;
+                z-index: 0;
+                top: 20vh;
+                top: 7vh;
+                width: 100%;
+            }
+            .pi{
+            position: absolute;
+            z-index: 1;
+            right: 7vh !important;
+            color: #ffffff;
+            bottom: 26vh !important;
+            font-family: 'Precious';
+            font-size: 5vh;
+            background: rgba(180, 137, 29, 0.959);
+            padding: 2vh 2vh 1vh 2vh;
+            border-radius: 5vh;
+        }
+        .bride{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            padding-top: 24vh;
+            width: 100%;
+        }
+        .text-1{
+            position: relative;
+            color: rgb(232, 211, 92);
+            text-shadow: 0px 2px #ffffff;
+            z-index: 1;
+            font-family: 'Agdasima';
+        }
+        .text-2{
+            position: relative;
+            color: rgb(232, 211, 92);
+            text-shadow: 0px 2px #ffffff;
+            z-index: 1;
+            font-family: 'DancingScript';
+            padding: 0 !important;
+        }
+        .text-3 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 26vh;
+            bottom: 59vh;
+            font-weight: bold;
+            display: none;
+            text-align: left;
+        }
+        .text-4 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 5vh;
+            bottom: 60vh;
+            font-weight: bold;
+            display: none;
+        }
+        .bride-a{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            padding-top: 14vh;
+            right: 13vh !important;
+        }
+        .pi-2 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 26vh;
+            bottom: 49vh;
+            font-weight: bold;
+            display: none;
+            text-align: left;
+            padding: 0 2vh 0 0;
+        }
+        .bride-b{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            padding-top: 18vh;
+            left: 12vh;
+        }  
+        .pi-3 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 5vh;
+            bottom: 52vh !important;
+            font-weight: bold;
+            display: none;
+            text-align: left;
+            padding: 0px 18vh 0 0;
+        }
+        }
+        @media (max-width: 395px) {
+            .container-fluid{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(77, 73, 70) !important;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            }
+            .fw-1{
+                position: absolute;
+                z-index: 0;
+                right: 0vh;
+                top: 20vh;
+                width: 100%;
+            }
+            .fw-2{
+                position: absolute;
+                z-index: 0;
+                top: 20vh;
+                top: 7vh;
+                width: 100%;
+            }
+            .pi{
+            position: absolute;
+            z-index: 1;
+            right: 5vh !important;
+            color: #ffffff;
+            bottom: 28vh !important;
+            font-family: 'Precious';
+            font-size: 5vh;
+            background: rgba(180, 137, 29, 0.959);
+            padding: 2vh 2vh 1vh 2vh;
+            border-radius: 5vh;
+        }
+        .bride{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            padding-top: 24vh;
+            width: 100%;
+        }
+        .text-1{
+            position: relative;
+            color: rgb(232, 211, 92);
+            text-shadow: 0px 2px #ffffff;
+            z-index: 1;
+            font-family: 'Agdasima';
+        }
+        .text-2{
+            position: relative;
+            color: rgb(232, 211, 92);
+            text-shadow: 0px 2px #ffffff;
+            z-index: 1;
+            font-family: 'DancingScript';
+            padding: 0 !important;
+        }
+        .text-3 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 26vh;
+            bottom: 59vh;
+            font-weight: bold;
+            display: none;
+            text-align: left;
+        }
+        .text-4 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 5vh;
+            bottom: 60vh;
+            font-weight: bold;
+            display: none;
+        }
+        .bride-a{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            padding-top: 14vh;
+            right: 12vh !important;
+        }
+        .pi-2 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 26vh;
+            bottom: 49vh;
+            font-weight: bold;
+            display: none;
+            text-align: left;
+            padding: 0 2vh 0 0;
+        }
+        .bride-b{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            padding-top: 18vh;
+            left: 12vh;
+        }  
+        .pi-3 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 1;
+            font-family: 'Bacasime';
+            left: 5vh;
+            bottom: 50vh !important;
+            font-weight: bold;
+            display: none;
+            text-align: left;
+            padding: 0px 18vh 0 0;
+        }
+        }
+    </style>
+    <div id="container-0" class="container-fluid text-center">
+        <h1 class="text-1 zoom-in" style="top: 42vh;text-shadow:none;font-size: 40px;">بِسْمِ الله الرَّحْمَنِ الرَّحِيْمِ</h1>
+        <h5 class="text-2 zoom-in" style="top: 44vh;text-shadow:none;">Dengan menyebut nama Allah yang maha pengasih lagi maha penyayang</h5>
+        <h5 class="text-2 zoom-in" style="top: 46vh;text-shadow:none;">Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah)</h5>
+    </div>
+        <div id="container-1" class="container-fluid text-center">
+            <img class="fw-1 zoom-in" src="images/fw-2.png" alt="">
+            <img class="bride zoom-in" src="images/m1.png" alt="">
+            <h1 class="text-1 zoom-in">You Are Invited</h1>
+            <h5 class="text-2 zoom-in">08 | 07 | 2023 </h5>
+            <p class="pi zoom-in">Ikhfa & Aji</p>
+        </div>
+        <div id="container-2" class="container-fluid text-center">
+            <img class="bride-a" src="images/m2.png" alt="">
+            <h2 class="text-3">Ikhfa Andini Salsabila</h2>
+            <p class="pi-2">Anak ketiga dari Bapak Krisnadi & Ibu Siti Heniyawati</p>
+        </div>
+        <div id="container-3" class="container-fluid text-center">
+            <img class="bride-b" src="images/m3.png" alt="">
+            <h2 class="text-4">Aji Septiawan</h2>
+            <p class="pi-3">Anak pertama dari Bapak Wiyono & Ibu Kenti Anwariyah</p>
+        </div>
+        <div id="container-4" class="container-fluid text-center">
+            <h1 class="text-1 zoom-in" style="top: 30vh;text-shadow:none;">Acara Walimahan</h1>
+            <h5 class="text-2 zoom-in" style="top: 33vh;text-shadow:none;">8 Juli 2023 Pukul 13.00 WIB -17.00 WIB</h5>
+            <h1 class="text-1 zoom-in" style="top: 34vh;text-shadow:none;">Lokasi</h1>
+            <h5 class="text-2 zoom-in" style="top: 35vh;text-shadow:none;padding: 0 35vh 0 45vh;">Sawah Dalam Blok Mede I/1 RT 006/RW 004 Kelurahan Panunggangan Utara Kecamatan Pinang Kota Tangerang Provinsi Banten </h5>
+        </div>
+</body>
+</html>
